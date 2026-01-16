@@ -1,26 +1,130 @@
-/* =========================
-   HEADER STYLING
-========================= */
+/*
+========================================
+File: styles.css
+Author: Your Name
+Date: 2026-01-15
+Description:
+External stylesheet used to provide consistent
+layout, typography, color scheme, and navigation
+styling across all pages in the portfolio website.
+========================================
+*/
 
-.site-header {
-    display: flex;
-    align-items: center;
-    padding: 15px;
+/* -------- GOOGLE FONT IMPORT -------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* -------- GLOBAL STYLES -------- */
+* {
+    box-sizing: border-box;
 }
 
-.logo {
-    max-width: 70px;
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* -------- HEADER -------- */
+header {
+    background-color: #020617;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #38bdf8;
+}
+
+header img {
+    width: 60px;
     height: auto;
     margin-right: 15px;
 }
 
-.header-text h1 {
-    margin: 0;
+header h1 {
     font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #38bdf8;
 }
 
-.header-text p {
+/* -------- NAVIGATION -------- */
+nav {
+    background-color: #020617;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
-    font-size: 1rem;
-    color: #555;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+/* -------- MAIN CONTENT -------- */
+main {
+    padding: 30px;
+}
+
+article {
+    max-width: 900px;
+    margin: auto;
+    background-color: #020617;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+article h2 {
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+/* -------- TEXT ELEMENTS -------- */
+p {
+    margin-bottom: 15px;
+}
+
+/* -------- IMAGES -------- */
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #38bdf8;
+}
+
+/* -------- LINKS -------- */
+a {
+    color: #38bdf8;
+}
+
+/* -------- FOOTER -------- */
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 2px solid #38bdf8;
 }
