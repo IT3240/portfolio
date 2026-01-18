@@ -246,20 +246,23 @@ th {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    gap: 1.5rem;         /* spacing between images */
+    margin-top: 1rem;
 }
 
 .gallery-grid img {
-    width: 100%;        /* Full width of grid cell */
-    height: auto;       /* Maintain aspect ratio */
-    object-fit: cover;  /* Crop if necessary, no stretching */
+    width: 100%;          /* fills grid column */
+    height: 200px;        /* uniform height */
+    object-fit: cover;    /* crops image proportionally */
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
+
 
 
 /* =========================================
