@@ -16,43 +16,60 @@ Image gallery page displaying technology-related images.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<<body>
 
-<header>
-    <img src="logo.png" alt="Portfolio Logo">
-    <h1>My IT Portfolio</h1>
-</header>
+    <!-- ===================================== -->
+    <!-- Header Section (Branding + Navigation) -->
+    <!-- ===================================== -->
+    <header>
+        <img src="logo.png" alt="Portfolio Logo">
+        <h1>My IT Portfolio</h1>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="interests.html">Interests</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <!-- Navigation Menu (Flexbox via CSS) -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <article>
-        <h2>Gallery</h2>
+    <!-- ========================= -->
+    <!-- Main Content Area -->
+    <!-- ========================= -->
+    <main>
+        <article>
 
- <!-- Gallery Section -->
-<section class="gallery">
-    <h2>Project Gallery</h2>
+            <!-- Gallery Section -->
+            <section>
+                <h2>Project Gallery</h2>
 
-    <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="Modern IT workspace with multiple monitors and coding environment">
-        <img src="images/gallery2.jpg" alt="Network and system monitoring dashboard display">
-    </div>
-</section>
+                <p>
+                    This gallery highlights examples of technology environments
+                    and tools related to networking, system administration,
+                    and cybersecurity.
+                </p>
 
-    </article>
-</main>
+                <!-- Dynamic Image Grid (CSS Grid) -->
+                <div class="gallery-grid">
+                    <img src="gallery1.jpg" alt="Modern IT workspace with multiple monitors and coding environment">
+                    <img src="gallery2.jpg" alt="Network and system monitoring dashboard display">
+                    <img src="gallery3.jpg" alt="Server rack with organized network cabling and hardware">
+                    <img src="gallery4.jpg" alt="Cybersecurity operations center monitoring screens">
+                </div>
+            </section>
 
-<footer>
-    <p>&copy; 2026 Sam Chavez | IT Portfolio</p>
-</footer>
+        </article>
+    </main>
+
+    <!-- ================= -->
+    <!-- Footer Section -->
+    <!-- ================= -->
+    <footer>
+        <p>&copy; 2026 Sam Chavez | IT Portfolio</p>
+    </footer>
 
 </body>
-</html>
