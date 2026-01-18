@@ -250,7 +250,9 @@ th {
 }
 
 .gallery-grid img {
-    width: 100%;
+    width: 100%;        /* Full width of grid cell */
+    height: auto;       /* Maintain aspect ratio */
+    object-fit: cover;  /* Crop if necessary, no stretching */
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -258,6 +260,7 @@ th {
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
+
 
 /* =========================================
    RESPONSIVE DESIGN
