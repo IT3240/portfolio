@@ -206,3 +206,17 @@ footer {
         margin-bottom: 10px;
     }
 }
+/* =========================================
+   AUDIO PLAYER STYLING
+========================================= */
+
+.home-audio {
+    background-color: #020617;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 1rem;
+}
