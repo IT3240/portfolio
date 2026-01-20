@@ -263,8 +263,6 @@ th {
     transform: scale(1.05);
 }
 
-
-
 /* =========================================
    RESPONSIVE DESIGN
    ========================================= */
@@ -274,4 +272,39 @@ th {
         flex-direction: column;
         align-items: center;
     }
+}
+/* =========================================
+   HOME PAGE LAYOUT — FLEX + GRID
+   ========================================= */
+
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Text Section */
+.home-text {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.feature-box {
+    background-color: #f2f2f2;
+    padding: 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
