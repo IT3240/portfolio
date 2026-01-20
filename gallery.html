@@ -6,7 +6,8 @@ Name: Sam Chavez
 Date: 2026-01-15
 File: gallery.html
 Description:
-Image gallery page displaying technology-related images.
+Image and media gallery page displaying technology-related
+images and a featured video with embedded audio.
 -->
 
 <head>
@@ -25,7 +26,7 @@ Image gallery page displaying technology-related images.
         <img src="logo.png" alt="Portfolio Logo">
         <h1>My IT Portfolio</h1>
 
-        <!-- Navigation Menu (Flexbox via CSS) -->
+        <!-- Navigation Menu (Flexbox/Grid via CSS) -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,30 +42,69 @@ Image gallery page displaying technology-related images.
     <!-- Main Content Area -->
     <!-- ========================= -->
     <main>
-    <article>
+        <article>
 
-        <!-- Gallery Section -->
-        <section>
-            <h2>Project Gallery</h2>
+            <!-- ========================= -->
+            <!-- Image Gallery Section -->
+            <!-- ========================= -->
+            <section>
+                <h2>Project Gallery</h2>
 
-            <p>
-                This gallery highlights examples of technology environments
-                and tools related to networking, system administration,
-                and cybersecurity.
-            </p>
+                <p>
+                    This gallery highlights examples of technology environments
+                    and tools related to networking, system administration,
+                    and cybersecurity. Click any image to view the full-size
+                    version in a new browser tab.
+                </p>
 
-            <!-- Dynamic Image Grid (CSS Grid) -->
-            <div class="gallery-grid">
-                <img src="gallery1.jpg" alt="Modern IT workspace with multiple monitors and coding environment">
-                <img src="gallery2.jpg" alt="Network and system monitoring dashboard display">
-                <img src="gallery3.jpg" alt="Server rack with organized network cabling and hardware">
-                <img src="gallery4.jpg" alt="Cybersecurity operations center monitoring screens">
-            </div>
-        </section>
+                <!-- Dynamic Image Grid (CSS Grid) -->
+                <div class="gallery-grid">
 
-    </article>
-</main>
+                    <!-- Thumbnail Image 1 -->
+                    <a href="gallery1.jpg" target="_blank">
+                        <img src="gallery1.jpg" alt="Modern IT workspace with multiple monitors and coding environment">
+                    </a>
 
+                    <!-- Thumbnail Image 2 -->
+                    <a href="gallery2.jpg" target="_blank">
+                        <img src="gallery2.jpg" alt="Network and system monitoring dashboard display">
+                    </a>
+
+                    <!-- Thumbnail Image 3 -->
+                    <a href="gallery3.jpg" target="_blank">
+                        <img src="gallery3.jpg" alt="Server rack with organized network cabling and hardware">
+                    </a>
+
+                    <!-- Thumbnail Image 4 -->
+                    <a href="gallery4.jpg" target="_blank">
+                        <img src="gallery4.jpg" alt="Cybersecurity operations center monitoring screens">
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- ========================= -->
+            <!-- Video Section (Assignment 4) -->
+            <!-- ========================= -->
+            <section>
+                <h2>Featured Technology Video</h2>
+
+                <p>
+                    This video demonstrates a modern IT workspace environment,
+                    highlighting system monitoring, networking tools, and
+                    cybersecurity operations. The video includes audio narration
+                    and ambient sound for a complete media experience.
+                </p>
+
+                <!-- Video with Embedded Audio -->
+                <video controls width="100%">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </section>
+
+        </article>
+    </main>
 
     <!-- ================= -->
     <!-- Footer Section -->
