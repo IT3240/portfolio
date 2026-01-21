@@ -223,7 +223,7 @@ audio {
 /* =========================
    VIDEO STYLING — MATCH GALLERY
 ========================= */
-.gallery video {
+.gallery-video video {
     width: 100%;              /* fills the grid or section width */
     max-width: 800px;         /* optional max-width for large screens */
     height: auto;             /* keeps correct aspect ratio */
@@ -235,7 +235,7 @@ audio {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery video:hover {
+.gallery-video video:hover {
     transform: scale(1.02);
     box-shadow: 0 12px 25px rgba(0, 188, 212, 0.5);
 }
