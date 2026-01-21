@@ -220,3 +220,65 @@ audio {
     width: 100%;
     margin-top: 1rem;
 }
+/* =========================
+   VIDEO STYLING — MATCH GALLERY
+========================= */
+.gallery video {
+    width: 100%;              /* fills the grid or section width */
+    max-width: 800px;         /* optional max-width for large screens */
+    height: auto;             /* keeps correct aspect ratio */
+    border-radius: 10px;      /* matches gallery images */
+    border: 2px solid #00bcd4; /* matching gallery border color */
+    box-shadow: 0 6px 15px rgba(0, 188, 212, 0.4); /* soft shadow for emphasis */
+    display: block;           /* removes inline spacing */
+    margin: 1rem auto;        /* center the video and add spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 188, 212, 0.5);
+}
+/* =========================================
+   GALLERY VIDEO
+========================================= */
+.gallery-video {
+    background-color: #020617;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-video video {
+    width: 100%;
+    max-width: 800px;      /* ensures it doesn't get too large on big screens */
+    height: auto;          /* maintains aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #00bcd4;
+    box-shadow: 0 6px 15px rgba(0, 188, 212, 0.4);
+    display: block;
+    margin: 1rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-video video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 188, 212, 0.5);
+}
+
+/* =========================================
+   GALLERY AUDIO
+========================================= */
+.gallery-audio {
+    background-color: #020617;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery-audio audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    display: block;
+}

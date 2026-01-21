@@ -7,7 +7,7 @@ Date: 2026-01-15
 File: gallery.html
 Description:
 Image and media gallery page displaying technology-related
-images and a featured video with embedded audio.
+images, a featured video, and a background audio track.
 -->
 
 <head>
@@ -47,7 +47,7 @@ images and a featured video with embedded audio.
             <!-- ========================= -->
             <!-- Image Gallery Section -->
             <!-- ========================= -->
-            <section>
+            <section class="gallery">
                 <h2>Project Gallery</h2>
 
                 <p>
@@ -59,51 +59,56 @@ images and a featured video with embedded audio.
 
                 <!-- Dynamic Image Grid (CSS Grid) -->
                 <div class="gallery-grid">
-
-                    <!-- Thumbnail Image 1 -->
                     <a href="gallery1.jpg" target="_blank">
                         <img src="gallery1.jpg" alt="Modern IT workspace with multiple monitors and coding environment">
                     </a>
-
-                    <!-- Thumbnail Image 2 -->
                     <a href="gallery2.jpg" target="_blank">
                         <img src="gallery2.jpg" alt="Network and system monitoring dashboard display">
                     </a>
-
-                    <!-- Thumbnail Image 3 -->
                     <a href="gallery3.jpg" target="_blank">
                         <img src="gallery3.jpg" alt="Server rack with organized network cabling and hardware">
                     </a>
-
-                    <!-- Thumbnail Image 4 -->
                     <a href="gallery4.jpg" target="_blank">
                         <img src="gallery4.jpg" alt="Cybersecurity operations center monitoring screens">
                     </a>
-
                 </div>
             </section>
 
             <!-- ========================= -->
-<!-- Video Section (Assignment 4) -->
-<!-- ========================= -->
-<section class="gallery-video">
-    <h2>Featured Technology Video</h2>
+            <!-- Video Section -->
+            <!-- ========================= -->
+            <section class="gallery-video">
+                <h2>Featured Technology Video</h2>
 
-    <p>
-        This video demonstrates a modern IT workspace environment,
-        highlighting system monitoring, networking tools, and
-        cybersecurity operations. The video includes audio narration
-        and ambient sound for a complete media experience.
-    </p>
+                <p>
+                    This video demonstrates a modern IT workspace environment,
+                    highlighting system monitoring, networking tools, and
+                    cybersecurity operations. The video includes audio narration
+                    and ambient sound for a complete media experience.
+                </p>
 
-    <!-- Video with embedded audio -->
-    <video controls>
-        <source src="video1.mp4" type="video/mp4">
-        Your browser does not support the video element.
-    </video>
-</section>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </section>
 
-            
+            <!-- ========================= -->
+            <!-- Optional Audio Section -->
+            <!-- ========================= -->
+            <section class="gallery-audio">
+                <h2>Background Audio Track</h2>
+
+                <p>
+                    A soft technology-themed audio track to enhance the browsing experience.
+                </p>
+
+                <audio controls>
+                    <source src="media1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+
         </article>
     </main>
 
