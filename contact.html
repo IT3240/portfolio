@@ -6,7 +6,8 @@ Name: Sam Chavez
 Date: 2026-01-15
 File: contact.html
 Description:
-Contact information page for professional communication.
+Contact page with a styled web form that collects user input
+and displays the results using JavaScript (Assignment 5).
 -->
 
 <head>
@@ -18,61 +19,120 @@ Contact information page for professional communication.
 
 <body>
 
-    <!-- ===================================== -->
-    <!-- Header Section (Branding + Navigation) -->
-    <!-- ===================================== -->
-    <header>
-        <img src="logo.png" alt="Portfolio Logo">
-        <h1>My IT Portfolio</h1>
+<!-- ===================================== -->
+<!-- Header Section -->
+<!-- ===================================== -->
+<header>
+    <img src="logo.png" alt="Portfolio Logo">
+    <h1>My IT Portfolio</h1>
 
-        <!-- Navigation Menu (Flexbox via CSS) -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ========================= -->
+<!-- Main Content Area -->
+<!-- ========================= -->
+<main>
+<article>
+
+<section>
+    <h2>Contact Me</h2>
+
+    <p>
+        Use the form below to get in touch regarding IT projects,
+        networking opportunities, or general inquiries.
+    </p>
 
     <!-- ========================= -->
-    <!-- Main Content Area -->
+    <!-- Web Form (Assignment 5) -->
     <!-- ========================= -->
-    <main>
-        <article>
+    <form id="webForm" action="#">
 
-            <!-- Contact Section -->
-            <section>
-                <h2>Contact Information</h2>
+        <fieldset>
+            <legend>Contact Information</legend>
 
-                <p>
-                    You can reach me using the following professional contact methods:
-                </p>
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:chavez1.sam@gmail.com">
-                        chavez1.sam@gmail.com
-                    </a>
-                    <br>
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>
 
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/samchavez" target="_blank" rel="noopener">
-                        linkedin.com/in/samchavez
-                    </a>
-                </p>
-            </section>
+            <!-- Select List -->
+            <label for="topic">Reason for Contact:</label>
+            <select id="topic" name="topic">
+                <option value="Networking">Networking Opportunity</option>
+                <option value="Project">Project Collaboration</option>
+                <option value="Hiring">Hiring Inquiry</option>
+                <option value="General">General Question</option>
+            </select>
 
-        </article>
-    </main>
+            <!-- Radio Buttons -->
+            <p>Preferred Contact Method:</p>
+            <label>
+                <input type="radio" name="contactMethod" value="Email" checked>
+                Email
+            </label>
 
-    <!-- ================= -->
-    <!-- Footer Section -->
-    <!-- ================= -->
-    <footer>
-        <p>&copy; 2026 Sam Chavez | IT Portfolio</p>
-    </footer>
+            <label>
+                <input type="radio" name="contactMethod" value="Phone">
+                Phone
+            </label>
+
+            <!-- Checkboxes -->
+            <p>Areas of Interest:</p>
+            <label>
+                <input type="checkbox" name="interest" value="Networking">
+                Networking
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Cybersecurity">
+                Cybersecurity
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Systems">
+                Systems Administration
+            </label>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Form">
+
+        </fieldset>
+
+    </form>
+
+    <!-- Output Display -->
+    <p><div id="output"></div></p>
+
+</section>
+
+</article>
+</main>
+
+<!-- ================= -->
+<!-- Footer -->
+<!-- ================= -->
+<footer>
+    <p>&copy; 2026 Sam Chavez | IT Portfolio</p>
+</footer>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
 
 </body>
+</html>
