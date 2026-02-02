@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Logo / Header Text (matches .logo style) -->
+    <a class="logo" href="#">
+        CapellaVolunteers<span class="org">.org</span>
+    </a>
+
+    <!-- Navigation (your CSS styles nav + ul + li + a) -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Invite</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form must be id="pageForm" to match CSS grid layout -->
+    <form id="pageForm" onsubmit="replaceContent(); return false;">
+
+        <label id="recipient-label" for="recipient-input">Recipient Name:</label>
+        <input type="text" id="recipient-input" placeholder="Enter recipient name" required>
+
+        <label id="host-label" for="host-input">Host Name:</label>
+        <input type="text" id="host-input" placeholder="Enter host name" required>
+
+        <input type="submit" id="submit" value="Create Invitation">
+    </form>
+
+    <!-- Output area must match JS: outputArea + hidden class -->
+    <section id="outputArea" class="hidden">
+        <h2>Invitation Preview</h2>
+        <p>
+            Hello <span id="recipient-placeholder">Recipient</span>!
+            You are invited by <span id="host-placeholder">Host</span>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sam Chavez</p>
+    </footer>
+
+    <!-- Must load your JS file -->
+    <script src="invitation.js"></script>
+
+</body>
+</html>
