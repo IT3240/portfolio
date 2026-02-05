@@ -172,6 +172,5 @@ footer {
 }
 
 .hidden {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
