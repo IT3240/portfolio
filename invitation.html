@@ -14,7 +14,6 @@ a customized invitation using JavaScript.
 <head>
     <meta charset="UTF-8">
     <title>IT Portfolio | Invitation</title>
-    <!-- Use the SAME stylesheet as the rest of the site -->
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -43,7 +42,7 @@ a customized invitation using JavaScript.
 <!-- ========================= -->
 <!-- Main Content Area -->
 <!-- ========================= -->
-<main>
+<main class="invite-page">
 <article>
 
     <h2>Invitation Generator</h2>
@@ -61,10 +60,10 @@ a customized invitation using JavaScript.
         <form id="pageForm" onsubmit="replaceContent(); return false;">
 
             <label for="recipient-input">Recipient Name:</label>
-            <input type="text" id="recipient-input" required>
+            <input type="text" id="recipient-input" name="recipient" required>
 
             <label for="host-input">Host Name:</label>
-            <input type="text" id="host-input" required>
+            <input type="text" id="host-input" name="host" required>
 
             <input type="submit" value="Create Invitation">
         </form>
